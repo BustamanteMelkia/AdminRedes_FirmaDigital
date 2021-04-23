@@ -3,12 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package model.server;
 
-/**
- *
- * @author bonfi
- */
-public class ModelDao {
+public class RequestManager {
     
 }
