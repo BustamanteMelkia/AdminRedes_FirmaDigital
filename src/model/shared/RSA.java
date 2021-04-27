@@ -6,7 +6,6 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
@@ -14,7 +13,6 @@ import java.security.KeyFactory;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
@@ -88,40 +86,51 @@ public class RSA {
         this.publicKey = kp.getPublic();
     }
     
-    public String encrypt(String plain) 
-        throws 
-            NoSuchAlgorithmException,
-            NoSuchPaddingException, 
-            InvalidKeyException,
-            IllegalBlockSizeException, 
-            BadPaddingException, 
-            InvalidKeySpecException, 
-            UnsupportedEncodingException, 
-            NoSuchProviderException {
+    public String encrypt(String plain) {
 
-        byte[] encryptedBytes; 
-  
-        Cipher cipher = Cipher.getInstance("RSA");
-        cipher.init(Cipher.ENCRYPT_MODE, this.publicKey);
-        encryptedBytes = cipher.doFinal(plain.getBytes());
+        byte[] encryptedBytes = null; 
+        Cipher cipher;
+        try {
+            cipher = Cipher.getInstance("RSA");
+            cipher.init(Cipher.ENCRYPT_MODE, this.publicKey);
+            encryptedBytes = cipher.doFinal(plain.getBytes());
+        } catch (NoSuchAlgorithmException ex) {
+            System.out.println(ex.getMessage());
+        } catch (NoSuchPaddingException ex) {
+            System.out.println(ex.getMessage());
+        }catch (InvalidKeyException ex) {
+            System.out.println(ex.getMessage());
+        }catch (IllegalBlockSizeException ex) {
+            System.out.println(ex.getMessage());
+        } catch (BadPaddingException ex) {
+            System.out.println(ex.getMessage());
+        }
 
         return bytesToString(encryptedBytes);
 
     }
-    public String decrypt(String result) 
-        throws 
-        NoSuchAlgorithmException,
-        NoSuchPaddingException, 
-        InvalidKeyException, 
-        IllegalBlockSizeException, 
-        BadPaddingException {
+    public String decrypt(String result) {
 
-        byte[] decryptedBytes;
+        byte[] decryptedBytes = null;
 
-        Cipher cipher = Cipher.getInstance("RSA");
-        cipher.init(Cipher.DECRYPT_MODE, this.privateKey);
-        decryptedBytes = cipher.doFinal(stringToBytes(result));
-        return new String(decryptedBytes);
+        Cipher cipher;
+        try {
+            cipher = Cipher.getInstance("RSA");
+            cipher.init(Cipher.DECRYPT_MODE, this.privateKey);
+            decryptedBytes = cipher.doFinal(stringToBytes(result));
+        } catch (NoSuchAlgorithmException ex) {
+            System.out.println(ex.getMessage());
+        } catch (NoSuchPaddingException ex) {
+            System.out.println(ex.getMessage());
+        }catch (InvalidKeyException ex) {
+            System.out.println(ex.getMessage());
+        }catch (IllegalBlockSizeException ex) {
+            System.out.println(ex.getMessage());
+        } catch (BadPaddingException ex) {
+            System.out.println(ex.getMessage());
+        }finally{
+            return new String(decryptedBytes);
+        }
     }
     
     public String bytesToString(byte[] b) {
