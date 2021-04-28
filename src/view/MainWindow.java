@@ -18,9 +18,7 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel20 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
+        jpanel_left = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         bt_name_user = new javax.swing.JButton();
@@ -45,10 +43,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel21 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
+        jpanel_right = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
@@ -79,7 +74,8 @@ public class MainWindow extends javax.swing.JFrame {
         encrypted_grade = new javax.swing.JTextField();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
-        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -96,24 +92,19 @@ public class MainWindow extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setPreferredSize(new java.awt.Dimension(450, 540));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/programmer(1).png"))); // NOI18N
-        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 140, -1));
-
-        jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpanel_left.setBackground(new java.awt.Color(153, 0, 0));
+        jpanel_left.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpanel_left.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel22.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("Siguiente");
-        jPanel9.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, -1, -1));
+        jpanel_left.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, -1, -1));
 
         jLabel23.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
         jLabel23.setText("Firma");
-        jPanel9.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, 60, 40));
+        jpanel_left.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, 60, 40));
 
         bt_name_user.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
         bt_name_user.setToolTipText("");
@@ -124,11 +115,13 @@ public class MainWindow extends javax.swing.JFrame {
                 bt_name_userActionPerformed(evt);
             }
         });
-        jPanel9.add(bt_name_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 120, -1));
-        jPanel9.add(nombre_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 43, 300, -1));
+        jpanel_left.add(bt_name_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 120, -1));
+        jpanel_left.add(nombre_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 43, 300, -1));
 
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Nombre Completo");
-        jPanel9.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 22, 154, -1));
+        jpanel_left.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 22, 154, -1));
 
         bt_resumen_user.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
         bt_resumen_user.setBorderPainted(false);
@@ -138,25 +131,29 @@ public class MainWindow extends javax.swing.JFrame {
                 bt_resumen_userActionPerformed(evt);
             }
         });
-        jPanel9.add(bt_resumen_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 106, 106, -1));
-        jPanel9.add(resumen_md5_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 107, 300, -1));
+        jpanel_left.add(bt_resumen_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 106, 106, -1));
+        jpanel_left.add(resumen_md5_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 107, 300, -1));
 
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Resumen(MD5)");
-        jPanel9.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 86, -1, -1));
+        jpanel_left.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 86, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Firma");
-        jPanel9.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 140, -1, -1));
+        jpanel_left.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 140, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
         jLabel24.setText("Encriptar");
-        jPanel9.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, -1, 20));
+        jpanel_left.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, -1, 20));
 
         jLabel25.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
         jLabel25.setText("Solicitar");
-        jPanel9.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, -1, -1));
-        jPanel9.add(firma_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 166, 300, -1));
+        jpanel_left.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, -1, -1));
+        jpanel_left.add(firma_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 166, 300, -1));
 
         bt_firmar_user.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
         bt_firmar_user.setBorderPainted(false);
@@ -166,7 +163,7 @@ public class MainWindow extends javax.swing.JFrame {
                 bt_firmar_userActionPerformed(evt);
             }
         });
-        jPanel9.add(bt_firmar_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 165, 106, -1));
+        jpanel_left.add(bt_firmar_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 165, 106, -1));
 
         bt_solicitar_user.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
         bt_solicitar_user.setBorderPainted(false);
@@ -176,25 +173,37 @@ public class MainWindow extends javax.swing.JFrame {
                 bt_solicitar_userActionPerformed(evt);
             }
         });
-        jPanel9.add(bt_solicitar_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 221, 106, -1));
-        jPanel9.add(nombre_encriptado_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 222, 300, -1));
+        jpanel_left.add(bt_solicitar_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 221, 106, -1));
+        jpanel_left.add(nombre_encriptado_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 222, 300, -1));
 
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Nombre encriptado");
-        jPanel9.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 201, -1, -1));
+        jpanel_left.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 201, -1, -1));
 
+        jPanel7.setBackground(new java.awt.Color(153, 0, 51));
         jPanel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Calificacion encriptada");
-        jPanel7.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 43, -1, -1));
+        jPanel7.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
 
+        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Calificacion del alumno");
-        jPanel7.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 81, -1, -1));
-        jPanel7.add(encripted_user_grade, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 260, -1));
-        jPanel7.add(grade_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 260, -1));
+        jPanel7.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
+        jPanel7.add(encripted_user_grade, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 190, -1));
+        jPanel7.add(grade_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, 190, -1));
 
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Calificacion del alumno");
-        jPanel7.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 12, -1, -1));
+        jPanel7.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
 
         jLabel26.setFont(new java.awt.Font("Arial", 1, 10)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
@@ -211,48 +220,39 @@ public class MainWindow extends javax.swing.JFrame {
         });
         jPanel7.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(161, 104, -1, -1));
 
-        jPanel9.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 424, 150));
+        jpanel_left.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 424, 150));
 
-        jPanel1.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 450, 440));
+        getContentPane().add(jpanel_left, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 450, 440));
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/gr.jpg"))); // NOI18N
-        jLabel18.setText("jLabel18");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 510, 640));
+        jpanel_right.setBackground(new java.awt.Color(153, 0, 0));
+        jpanel_right.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jpanel_right.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 12, 490, 630));
-
-        jPanel2.setPreferredSize(new java.awt.Dimension(450, 540));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/profile(1).png"))); // NOI18N
-        jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, -1, -1));
-
-        jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Nombre Recibido");
-        jPanel6.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 28, -1, -1));
+        jpanel_right.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 28, -1, -1));
 
         jLabel28.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
         jLabel28.setText("Resumen");
-        jPanel6.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, -1, -1));
+        jpanel_right.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
         jLabel30.setText("Comprobar");
-        jPanel6.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, -1, -1));
+        jpanel_right.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, -1, -1));
 
         jLabel29.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(255, 255, 255));
         jLabel29.setText("Descifrar");
-        jPanel6.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, -1, -1));
+        jpanel_right.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, -1, -1));
 
         jLabel27.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
         jLabel27.setText("Descifrar");
-        jPanel6.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, -1, -1));
-        jPanel6.add(nombre_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 49, 150, -1));
+        jpanel_right.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, -1, -1));
+        jpanel_right.add(nombre_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 49, 150, -1));
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
         jButton5.setBorderPainted(false);
@@ -262,14 +262,18 @@ public class MainWindow extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 100, -1));
-        jPanel6.add(nombre_decryp_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 167, -1));
+        jpanel_right.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 100, -1));
+        jpanel_right.add(nombre_decryp_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 167, -1));
 
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Nombre descencriptado");
-        jPanel6.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(275, 28, -1, -1));
+        jpanel_right.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(275, 28, -1, -1));
 
+        jLabel10.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Firma recibida");
-        jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 87, -1, -1));
+        jpanel_right.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 87, -1, -1));
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
         jButton6.setBorderPainted(false);
@@ -279,16 +283,20 @@ public class MainWindow extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, 100, -1));
-        jPanel6.add(firma_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 113, 150, -1));
-        jPanel6.add(firma_decryp_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 170, -1));
+        jpanel_right.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, 100, -1));
+        jpanel_right.add(firma_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 113, 150, -1));
+        jpanel_right.add(firma_decryp_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 170, -1));
 
+        jLabel11.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Firma descencriptada");
-        jPanel6.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(272, 87, -1, -1));
+        jpanel_right.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(272, 87, -1, -1));
 
+        jLabel12.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Resumen del nombre");
-        jPanel6.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 163, -1, -1));
-        jPanel6.add(resumen_nombre_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 184, 150, -1));
+        jpanel_right.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 163, -1, -1));
+        jpanel_right.add(resumen_nombre_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 184, 150, -1));
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
         jButton7.setBorderPainted(false);
@@ -298,11 +306,13 @@ public class MainWindow extends javax.swing.JFrame {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 100, -1));
-        jPanel6.add(resumen_firma_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 165, -1));
+        jpanel_right.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 100, -1));
+        jpanel_right.add(resumen_firma_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 165, -1));
 
+        jLabel13.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Resumen de la firma");
-        jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 163, -1, -1));
+        jpanel_right.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 163, -1, -1));
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
         jButton10.setBorderPainted(false);
@@ -312,13 +322,17 @@ public class MainWindow extends javax.swing.JFrame {
                 jButton10ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, -1, -1));
+        jpanel_right.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, -1, -1));
 
+        jPanel8.setBackground(new java.awt.Color(153, 0, 51));
         jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel14.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel14.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Envio de calificacion ");
-        jPanel8.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 12, -1, -1));
+        jPanel8.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, -1));
 
         jLabel32.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
@@ -330,10 +344,16 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel31.setText("Encriptar");
         jPanel8.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, -1, -1));
 
+        jLabel15.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel15.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Calificacion del alumno");
         jPanel8.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 47, -1, -1));
         jPanel8.add(cal_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 44, 172, -1));
 
+        jLabel16.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel16.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Calificacion encriptada");
         jPanel8.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 85, -1, -1));
         jPanel8.add(encrypted_grade, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 82, 172, -1));
@@ -359,26 +379,38 @@ public class MainWindow extends javax.swing.JFrame {
         });
         jPanel8.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, -1, -1));
 
-        jPanel6.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 430, -1));
+        jpanel_right.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 430, -1));
 
-        jPanel2.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 460, 440));
+        getContentPane().add(jpanel_right, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 170, 460, 440));
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/gr2.jpg"))); // NOI18N
-        jLabel19.setText("jLabel19");
-        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 630));
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/programmer(1).png"))); // NOI18N
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 140, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 13, 500, 630));
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/profile(1).png"))); // NOI18N
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 20, -1, -1));
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/bk.jpg"))); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/fondo rojo.jpg"))); // NOI18N
         jLabel17.setText("jLabel17");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1060, 650));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 980, 640));
 
+        jMenuBar1.setBackground(new java.awt.Color(153, 0, 0));
+        jMenuBar1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jMenu1.setBackground(new java.awt.Color(153, 0, 51));
+        jMenu1.setForeground(new java.awt.Color(255, 255, 255));
         jMenu1.setText("Autoservicios 2.0");
         jMenu1.setToolTipText("");
+        jMenu1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setBackground(new java.awt.Color(153, 0, 0));
+        jMenu2.setForeground(new java.awt.Color(255, 255, 255));
         jMenu2.setText("Equipo 2");
+        jMenu2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
+        jMenuItem2.setBackground(new java.awt.Color(153, 0, 0));
+        jMenuItem2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jMenuItem2.setForeground(new java.awt.Color(255, 255, 255));
         jMenuItem2.setText("Fuentes Gallardo Roberto ");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -387,18 +419,33 @@ public class MainWindow extends javax.swing.JFrame {
         });
         jMenu2.add(jMenuItem2);
 
+        jMenuItem5.setBackground(new java.awt.Color(153, 0, 0));
+        jMenuItem5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jMenuItem5.setForeground(new java.awt.Color(255, 255, 255));
         jMenuItem5.setText("Diaz Romero Ignacio    ");
         jMenu2.add(jMenuItem5);
 
+        jMenuItem6.setBackground(new java.awt.Color(153, 0, 0));
+        jMenuItem6.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jMenuItem6.setForeground(new java.awt.Color(255, 255, 255));
         jMenuItem6.setText("Giovanny Contreras Hernández ");
         jMenu2.add(jMenuItem6);
 
+        jMenuItem4.setBackground(new java.awt.Color(153, 0, 0));
+        jMenuItem4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jMenuItem4.setForeground(new java.awt.Color(255, 255, 255));
         jMenuItem4.setText("Ayala Lozano Jean Paul ");
         jMenu2.add(jMenuItem4);
 
+        jMenuItem3.setBackground(new java.awt.Color(153, 0, 0));
+        jMenuItem3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jMenuItem3.setForeground(new java.awt.Color(255, 255, 255));
         jMenuItem3.setText("Galindo Reyna Julio Daniel   ");
         jMenu2.add(jMenuItem3);
 
+        jMenuItem1.setBackground(new java.awt.Color(153, 0, 0));
+        jMenuItem1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jMenuItem1.setForeground(new java.awt.Color(255, 255, 255));
         jMenuItem1.setText("Bustamante Bonfil Melquiades     ");
         jMenu2.add(jMenuItem1);
 
@@ -463,62 +510,6 @@ public class MainWindow extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_bt_solicitar_userActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-        if(firma_user.getText().isEmpty()&&nombre_encriptado_user.getText().isEmpty()){
-                JOptionPane.showMessageDialog(null, "Verifique que tenga la firma y el nombre encriptado");
-        }else{
-            String temp = controller.decryptName();
-            nombre_decryp_server.setText(temp);
-        }
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        if(firma_user.getText().isEmpty()&&nombre_encriptado_user.getText().isEmpty()){
-               JOptionPane.showMessageDialog(null, "Verifique que tenga la firma y el nombre encriptado");
-        }else{
-            String temp = controller.decryptHashName();
-            firma_decryp_server.setText(temp);
-        }
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-        if(firma_user.getText().isEmpty()&&nombre_encriptado_user.getText().isEmpty()){
-               JOptionPane.showMessageDialog(null, "Verifique que tenga la firma y el nombre encriptado");
-        }else{
-            resumen_nombre_server.setText(controller.renderHash2());
-            resumen_firma_server.setText(controller.renderHashs1());
-        }
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        // TODO add your handling code here:
-        if(firma_user.getText().isEmpty()&&nombre_encriptado_user.getText().isEmpty()){
-               JOptionPane.showMessageDialog(null, "Faltan valores");
-        }else{
-            cal_server.setText(controller.checkMessage());
-        }
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-        if(nombre_user.getText().isEmpty()){
-               JOptionPane.showMessageDialog(null, "FALTAN VALORES");
-        }else{
-            encrypted_grade.setText(controller.encryptGrade());
-        }
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-        if(nombre_user.getText().isEmpty()){
-               JOptionPane.showMessageDialog(null, "FALTAN VALORES");
-        }else{
-            encripted_user_grade.setText(controller.sendGrade());
-        }
-    }//GEN-LAST:event_jButton9ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         if(nombre_user.getText().isEmpty()){
@@ -528,6 +519,62 @@ public class MainWindow extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        if(nombre_user.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "FALTAN VALORES");
+        }else{
+            encripted_user_grade.setText(controller.sendGrade());
+        }
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        if(nombre_user.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "FALTAN VALORES");
+        }else{
+            encrypted_grade.setText(controller.encryptGrade());
+        }
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        if(firma_user.getText().isEmpty()&&nombre_encriptado_user.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Faltan valores");
+        }else{
+            cal_server.setText(controller.checkMessage());
+        }
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        if(firma_user.getText().isEmpty()&&nombre_encriptado_user.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Verifique que tenga la firma y el nombre encriptado");
+        }else{
+            resumen_nombre_server.setText(controller.renderHash2());
+            resumen_firma_server.setText(controller.renderHashs1());
+        }
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        if(firma_user.getText().isEmpty()&&nombre_encriptado_user.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Verifique que tenga la firma y el nombre encriptado");
+        }else{
+            String temp = controller.decryptHashName();
+            firma_decryp_server.setText(temp);
+        }
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        if(firma_user.getText().isEmpty()&&nombre_encriptado_user.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Verifique que tenga la firma y el nombre encriptado");
+        }else{
+            String temp = controller.decryptName();
+            nombre_decryp_server.setText(temp);
+        }
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -592,8 +639,6 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
@@ -624,12 +669,10 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
+    private javax.swing.JPanel jpanel_left;
+    private javax.swing.JPanel jpanel_right;
     private javax.swing.JTextField nombre_decryp_server;
     private javax.swing.JTextField nombre_encriptado_user;
     private javax.swing.JTextField nombre_server;

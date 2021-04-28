@@ -31,6 +31,18 @@ public class StudentDao {
         
         student = new Student("Jean Paul Ayala Lozano",10);
         this.students.add(student);
+        
+        student = new Student("Giovanny Contreras Hernández",6);
+        this.students.add(student);
+        
+        student = new Student("Roberto Fuentes Gallardo", 9);
+        this.students.add(student);
+        
+        student = new Student("Julio Daniel Galindo Reyna", 8);
+        this.students.add(student);
+        
+        student = new Student("Melquiades Bustamante Bonfil ", 5);
+        this.students.add(student);
                 
     }
 }
