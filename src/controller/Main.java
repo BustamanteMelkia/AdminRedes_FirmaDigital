@@ -15,7 +15,7 @@ public class Main {
         
         controller.getNameHash();
         controller.encryptNameHash();
-        controller.encryptName();;
+        controller.encryptName();
         controller.sendData();
         controller.decryptName();
         controller.decryptHashName();

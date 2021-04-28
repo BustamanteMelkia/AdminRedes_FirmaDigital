@@ -39,7 +39,13 @@ public class Authentication {
         encryptedName = this.rsa.encrypt(this.studentName);
         return encryptedName;
     }     
-
+/******************************************************/
+    public String agetEncryptedName(String text){
+        String encryptedName="";
+        encryptedName = this.rsa.encrypt(text);
+        return encryptedName;
+    }  
+/******************************************************/
     /**
      * Calcular el resumen del nombre del estudiante
      * @return Resumen del nombre.
@@ -48,6 +54,12 @@ public class Authentication {
         String studentNameHash = Md5.getMd5(this.studentName);
         return studentNameHash;
     }
+    /**********************GIVOANYN*********************/
+    public String agetNameHash(String text){
+        String studentNameHash = Md5.getMd5(text);
+        return studentNameHash;
+    }
+    /*******************************************/
     
     /**
      * Encriptar el resumen del nombre.
@@ -58,6 +70,14 @@ public class Authentication {
         encryptedNameHash = this.rsa.encrypt(this.getNameHash());
         return encryptedNameHash;
     }
+    
+    /**********************Giovanny*****************************/
+    public String agetEncryptedNameHash(String text){
+        String encryptedNameHash="";
+        encryptedNameHash = this.rsa.encrypt(this.agetNameHash(text));
+        return encryptedNameHash;
+    }
+    /***************************************************/
 
     private void loadKeys() {
         try {
