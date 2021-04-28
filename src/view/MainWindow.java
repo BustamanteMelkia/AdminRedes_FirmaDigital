@@ -116,6 +116,8 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         jpanel_left.add(bt_name_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 120, -1));
+
+        nombre_user.setBorder(null);
         jpanel_left.add(nombre_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 43, 300, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
@@ -132,6 +134,8 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         jpanel_left.add(bt_resumen_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 106, 106, -1));
+
+        resumen_md5_user.setBorder(null);
         jpanel_left.add(resumen_md5_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 107, 300, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
@@ -153,6 +157,8 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
         jLabel25.setText("Solicitar");
         jpanel_left.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, -1, -1));
+
+        firma_user.setBorder(null);
         jpanel_left.add(firma_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 166, 300, -1));
 
         bt_firmar_user.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
@@ -174,6 +180,8 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         jpanel_left.add(bt_solicitar_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 221, 106, -1));
+
+        nombre_encriptado_user.setBorder(null);
         jpanel_left.add(nombre_encriptado_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 222, 300, -1));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
@@ -196,7 +204,11 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Calificacion del alumno");
         jPanel7.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
+
+        encripted_user_grade.setBorder(null);
         jPanel7.add(encripted_user_grade, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 190, -1));
+
+        grade_user.setBorder(null);
         jPanel7.add(grade_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, 190, -1));
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
@@ -252,6 +264,8 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
         jLabel27.setText("Descifrar");
         jpanel_right.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, -1, -1));
+
+        nombre_server.setBorder(null);
         jpanel_right.add(nombre_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 49, 150, -1));
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
@@ -263,6 +277,8 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         jpanel_right.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 100, -1));
+
+        nombre_decryp_server.setBorder(null);
         jpanel_right.add(nombre_decryp_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 167, -1));
 
         jLabel9.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
@@ -284,7 +300,11 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         jpanel_right.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, 100, -1));
+
+        firma_server.setBorder(null);
         jpanel_right.add(firma_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 113, 150, -1));
+
+        firma_decryp_server.setBorder(null);
         jpanel_right.add(firma_decryp_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 170, -1));
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
@@ -296,6 +316,8 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Resumen del nombre");
         jpanel_right.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 163, -1, -1));
+
+        resumen_nombre_server.setBorder(null);
         jpanel_right.add(resumen_nombre_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 184, 150, -1));
 
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
@@ -307,6 +329,8 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         jpanel_right.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 100, -1));
+
+        resumen_firma_server.setBorder(null);
         jpanel_right.add(resumen_firma_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 165, -1));
 
         jLabel13.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
@@ -349,6 +373,8 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Calificacion del alumno");
         jPanel8.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 47, -1, -1));
+
+        cal_server.setBorder(null);
         jPanel8.add(cal_server, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 44, 172, -1));
 
         jLabel16.setBackground(new java.awt.Color(255, 255, 255));
@@ -356,6 +382,8 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Calificacion encriptada");
         jPanel8.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 85, -1, -1));
+
+        encrypted_grade.setBorder(null);
         jPanel8.add(encrypted_grade, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 82, 172, -1));
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/colorButton(1).png"))); // NOI18N
