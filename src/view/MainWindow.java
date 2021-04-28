@@ -643,22 +643,39 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
-        cal_server.setText(controller.checkMessage());
+        if(firma_user.getText().isEmpty()&&nombre_encriptado_user.getText().isEmpty()){
+               JOptionPane.showMessageDialog(null, "Faltan valores");
+        }else{
+            cal_server.setText(controller.checkMessage());
+        }
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        encrypted_grade.setText(controller.encryptGrade());
+        if(nombre_user.getText().isEmpty()){
+               JOptionPane.showMessageDialog(null, "FALTAN VALORES");
+        }else{
+            encrypted_grade.setText(controller.encryptGrade());
+        }
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-        encripted_user_grade.setText(controller.sendGrade());
+        if(nombre_user.getText().isEmpty()){
+               JOptionPane.showMessageDialog(null, "FALTAN VALORES");
+        }else{
+            encripted_user_grade.setText(controller.sendGrade());
+        }
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        grade_user.setText(controller.decryptGrade());
+        if(nombre_user.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Faltan valores");
+        }else{
+            grade_user.setText(controller.decryptGrade());
+        }
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
